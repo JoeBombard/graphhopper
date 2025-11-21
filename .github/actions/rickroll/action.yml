@@ -1,0 +1,14 @@
+name: "Rickroll on test failure"
+description: "Prints a Rick Astley message and link when the workflow fails"
+runs:
+  using: "composite"
+  steps:
+    - name: Rickroll message
+      shell: bash
+      run: |
+        echo "::group::🎵 You've been Rickrolled!"
+        echo "Never gonna give you up,"
+        echo "Never gonna let you down,"
+        echo "Never gonna run around and desert you."
+        echo "👉 https://youtu.be/dQw4w9WgXcQ"
+        echo "::endgroup::"
